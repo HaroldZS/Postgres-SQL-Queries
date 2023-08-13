@@ -42,4 +42,4 @@ SELECT DISTINCT colegiatura
 	FROM db.alumnos
 	WHERE tutor_id = 20
 	ORDER BY colegiatura DESC
-	LIMIT 1 OFFSET 1
+	LIMIT 1 OFFSET 1;
