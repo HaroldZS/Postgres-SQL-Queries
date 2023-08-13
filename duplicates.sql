@@ -52,7 +52,7 @@ FROM (
 WHERE duplicates.row > 1;
 
 DELETE FROM db.alumnos
-WHERE id = (
+WHERE id IN (
 SELECT id
 FROM (
 	SELECT ROW_NUMBER() OVER(
