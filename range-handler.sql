@@ -26,7 +26,3 @@ SELECT ISEMPTY(numrange(1, 5));
 SELECT *
 FROM db.alumnos
 WHERE int4range(10, 20) @> tutor_id;
-
-SELECT int4range(MIN(tutor_id), MAX(tutor_id)) 
-* int4range(MIN(carrera_id), MAX(carrera_id))
-FROM db.alumnos;
